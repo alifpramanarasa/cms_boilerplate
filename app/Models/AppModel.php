@@ -5,10 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\Activitylog\LogOptions;
+
 use Exception;
 
 class AppModel extends Model
 {    
+    use LogsActivity;
+
     /**
      * The "type" of the auto-incrementing ID.
      *
@@ -65,5 +70,15 @@ class AppModel extends Model
                 $model->{$model->getKeyName()} = Str::uuid()->toString();
             }
         });
+    }
+
+    // Logging
+    protected $fillable = ['name', 'text'];
+
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+        ->logOnly(['name', 'text']);
+        // Chain fluent methods for configuration options
     }
 }

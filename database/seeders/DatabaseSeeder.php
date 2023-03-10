@@ -21,13 +21,5 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-
-        $role = Role::create(['name' => 'Admin']);
-
-        $permission = Permission::create(['name' => 'Administer roles & permissions']);
-
-        $role->givePermissionTo($permission);
-
-        $user->assignRole($role);
     }
 }

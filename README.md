@@ -4,6 +4,7 @@
 - [Laravel](https://laravel.com/)
 - [Sanctum](https://laravel.com/docs/10.x/sanctum)
 - [Spatie Laravel Permission](https://spatie.be/docs/laravel-permission/v5/introduction)
+- [Spatie Laravel Log Activity](https://spatie.be/docs/laravel-activitylog/v4/introduction)
 
 ## Installation
 1. Clone the repository

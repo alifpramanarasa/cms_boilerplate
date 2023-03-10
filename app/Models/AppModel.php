@@ -78,7 +78,6 @@ class AppModel extends Model
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-        ->logOnly(['name', 'text']);
-        // Chain fluent methods for configuration options
+        ->logOnly(['name', 'text']);        
     }
 }

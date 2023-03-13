@@ -23,7 +23,7 @@
                 </svg>
 
 
-                <span class="font-QuicksandMedium">Home</span>
+                <span class="font-QuicksandMedium">Dashboard</span>
             </div>
         </div>
 

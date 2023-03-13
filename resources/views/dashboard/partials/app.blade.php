@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html class="bg-gray-200">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-
+        
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -19,9 +19,7 @@
                     @include('dashboard.partials._navbar')
 
                     <div class="p-4">
-                        <div class="shadow-md rounded-lg w-full h-[200px]">
-                            <h1>Hello World</h1>
-                        </div>
+                        @yield('content')
                     </div>
 
                 </div>

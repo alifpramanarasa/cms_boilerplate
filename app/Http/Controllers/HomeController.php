@@ -11,6 +11,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('dashboard.partials.app');
+        return view('dashboard.dashboard.index');
     }
 }
